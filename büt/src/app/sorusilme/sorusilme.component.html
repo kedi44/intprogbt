@@ -1,0 +1,21 @@
+<table class="table table-dark">
+  <thead>
+      <tr>
+          <th scope="col">Adı Soyad</th>
+          <th scope="col">Soru</th>
+          <th scope="col">Mail</th>
+          <th scope="col">Uid</th>
+          <th scope="col"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let uye of sorular">
+          <td>{{soru.adsoyad}}</td>
+          <td>{{soru.soru}}</td>
+          <td>{{soru.mail}}</td>
+          <td>{{soru.uid}}</td>
+          <td><button class="btn btn-danger btn-sm" (click)="Sil(soru)">Sil</button></td>
+
+      </tr>
+  </tbody>
+</table>
